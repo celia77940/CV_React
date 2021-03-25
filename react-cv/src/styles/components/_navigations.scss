@@ -1,5 +1,5 @@
 .sidebar{
-    background: $color-1;
+    background: $color-5;
     font-family: $font-2;
     height: 100%;
     min-height: $minHeight;
@@ -26,8 +26,8 @@
             width: 100%;
             
             img{
-                border-radius: 50%;
-                box-shadow: 0 0 0 4px $color-2, 0 0 0 10px $color-1, 0 0 0 15px $color-3;
+                border-radius: 1% 10% 0% 10%;
+                box-shadow: 0 0 0 2px $color-2, 0 0 0 4px $color-1, 0 0 0 7px $color-3;
             }
             h3{
                 font-size: 2rem;
@@ -90,9 +90,11 @@
         padding: 0 14px;
         justify-content: space-between;
 
+
         li{
             font-size: 1.5rem;
             background: $white;
+            border-radius: 10% 20% 0% 20%;
             padding: .5rem .8rem;
             transition: 0.3s;
             cursor: pointer;
@@ -109,8 +111,66 @@
             &:hover{
                 background: $color-4;
             }
-            
+        }
+    }
 
+    .signature{
+        margin-top: 2rem;
+        text-align: center;
+        letter-spacing: .1rem;
+        font-size: .7rem;
+
+        p{
+            color: $white;
+
+            &:hover{
+                color: $color-4;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 850px){
+    .sidebar{
+        display: flex;
+        min-height: 50px;
+        margin-bottom: .2rem;
+        width: 100%;
+
+        .id, .socialNetwork{
+            display: none;
+        }
+
+        .navigation{
+            width: 100%;
+            padding: .1rem 1rem;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px){
+    .sidebar{
+        ul{
+            justify-content: space-around !important;
+
+            li{
+                padding: 1rem 0 !important;
+                margin-top: -0.3em;
+            }
+            i{
+                font-size: 1.4rem !important;
+                transform: translateY(-3) !important;
+                
+            }
+            span{
+                display: none;
+            }
         }
     }
 }
