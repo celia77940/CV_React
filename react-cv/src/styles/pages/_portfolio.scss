@@ -182,7 +182,7 @@
           cursor: pointer;
           color: $white;
           background: $color-4;
-          border-radius: $borderRadius;
+          border-radius: 0.8em 1.2em 0em 1.2em;
           padding: 1rem;
           transition: .2s;
   
@@ -217,17 +217,40 @@
   }
   @media (max-width: 520px){
     .radioDisplay {
-      display: none !important;
+      display: flex !important;
+      height: 3em;
+      padding: .0rem !important;
+
+      li{
+        font-size: 0.3em !important;
+      }
     }
     .portfolioContent {
-      grid-template-rows: 1fr !important;
+      // grid-template-rows: 1fr !important;
   
       .project {
-        grid-template-rows: 30px 40px 80px 40px !important;
+        // grid-template-rows: 30px 40px 80px 40px !important;
         width: 98% !important;
   
         img {
           height: 100% !important;
+        }
+      }
+
+      .infosContent{
+        width: 90% !important;
+        
+        h2{
+          font-size: 1em;
+        }
+        
+        .button{
+          font-size: 0.8em;
+          padding: 0.8em !important;
+        }
+
+        .text{
+          font-size: 0.8em;
         }
       }
     }

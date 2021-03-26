@@ -7,11 +7,11 @@ class ProjectList extends Component {
     state = {
         projects: portfolioData,
         radios: [
-            {id: 1, value: "Html"},
-            {id: 2, value: "Css"},
-            {id: 3, value: "Php"},
-            {id: 4, value: "Javascript"},
-            {id: 5, value: "React"}
+            {id: 1, value: "html"},
+            {id: 2, value: "css"},
+            {id: 3, value: "php"},
+            {id: 4, value: "javascript"},
+            {id: 5, value: "react"}
         ], 
         selectedRadio: 'Html'
     };
@@ -49,7 +49,7 @@ class ProjectList extends Component {
                 <div className="projects">
                     {
                         projects
-                            // .filter(items => items.languages.includes(selectedRadio))
+                            .filter(item => item.languages.includes(selectedRadio))
                             .map(item => {
                                 return(
                                     <Project
