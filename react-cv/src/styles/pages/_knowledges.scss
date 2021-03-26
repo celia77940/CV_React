@@ -190,20 +190,26 @@
     }
   }
   @media screen and (max-width: 950px){
-    .knowledgesContent {
-      h3 {
-        font-size: 1.2rem !important;
-      }
-      .languagesList {
-        padding-top: .2rem !important;
-      }
-      p {
-        font-size: .8rem;
-      }
-      .otherSkills, .hobbies {
-        font-size: .8rem;
-      }
-    }
+    .knowledges{
+      display: block;
+      .knowledgesContent {
+        margin-left: 0em;
+        .languagesFrameworks{
+          border: none;
+        }
+        h3 {
+          font-size: 1.2rem !important;
+        }
+        .languagesList {
+          padding-top: .2rem !important;
+        }
+        p {
+          font-size: .8rem;
+        }
+        .otherSkills, .hobbies {
+          font-size: .8rem;
+        }
+    }}
   }
   @media screen and (max-width: 850px){
     .knowledgesContent {
